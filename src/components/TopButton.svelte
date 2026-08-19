@@ -10,7 +10,8 @@
 <button class="button"
         onclick={openPage}
 
-        style:color={theme.fg}
+        style:--color={theme.fg}
+        style:--hover-color={theme.fg_focused}
 >
     {button.title}
 </button>
@@ -24,6 +25,8 @@
         font-weight: bold;
         font-family: Monocraft, monospace;
 
+        color: var(--color);
+
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -34,5 +37,6 @@
 
     .button:hover {
         background-size: 100% 4px;
+        color: var(--hover-color)
     }
 </style>

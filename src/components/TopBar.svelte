@@ -1,18 +1,18 @@
 <script>
-
-    // todo save hovered state when redirecting and also animation on first render ?
-
     import {theme} from "../constants.svelte.ts";
     import TopButton from "./TopButton.svelte";
+    import MenuButton from "./MenuButton.svelte";
 </script>
 
 <div
         class="topbar"
-        style:border-color={theme.fg}
-        style:--bg={theme.alt_bg}
+        style:--hover-border={theme.fg_focused}
+        style:--border-color={theme.fg}
         style:--hover-bg={theme.alt_bg_focused}
+        style:--bg-color={theme.alt_bg}
 >
     <div class="topbar-half">
+        <MenuButton/>
         <TopButton button={{ title: "Home", link: "/"}}/>
     </div>
     <div class="topbar-half" style:justify-content="right">
@@ -29,18 +29,20 @@
         border-radius: 10px;
         border-width: 2px;
         border-style: solid;
+        border-color: var(--border-color);
 
-        background-color: var(--bg);
+        background-color: var(--bg-color);
 
         margin: 12px;
-        padding-left: 8px;
+        padding-left: 2px;
         padding-right: 8px;
 
-        transition: background-color 0.5s ease;
+        transition: background-color 0.25s ease, border-color 0.25s ease;
     }
 
     .topbar:hover {
         background-color: var(--hover-bg);
+        border-color: var(--hover-border);
     }
 
     .topbar-half {
