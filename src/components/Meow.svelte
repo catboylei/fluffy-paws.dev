@@ -12,9 +12,16 @@
 </script>
 
 <button
+        class="button"
         onclick={randomize}
         style:background-color={theme.bg}
         style:color={theme.fg}
 >
     {mip}
 </button>
+
+<style>
+    .button {
+        height: 40px;
+    }
+</style>
