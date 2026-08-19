@@ -1,6 +1,7 @@
 <script>
     import {theme} from "../constants.svelte.ts";
     import Meow from "./Meow.svelte";
+    import TopButton from "./TopButton.svelte";
 </script>
 
 <div
@@ -11,6 +12,7 @@
     <div class="topbar-half">
         <Meow/>
         <Meow/>
+        <TopButton button={{ title: "About", link: "/mip"}}/>
     </div>
     <div class="topbar-half" style:justify-content="right">
         <Meow/>
