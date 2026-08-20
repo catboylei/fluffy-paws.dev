@@ -34,6 +34,9 @@
         transition: background-size 0.25s ease;
         background-size: 0 2px;
         background-position-y: 30px;
+
+        margin-right: 12px;
+        margin-left: 12px;
     }
 
     .button:hover {

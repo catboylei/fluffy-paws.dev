@@ -2,6 +2,7 @@
     import {theme} from "../constants.svelte.ts";
     import TopButton from "./TopButton.svelte";
     import MenuButtonFancy from "./MenuButtonFancy.svelte";
+    import Separator from "./Separator.svelte";
 </script>
 
 <div
@@ -13,10 +14,13 @@
 >
     <div class="topbar-half">
         <MenuButtonFancy/>
+        <Separator/>
         <TopButton button={{ title: "Home", link: "/"}}/>
+        <Separator/>
+        <TopButton button={{ title: "My Projects", link: "/projects"}}/>
     </div>
     <div class="topbar-half" style:justify-content="right">
-        <TopButton button={{ title: "About", link: "/about"}}/>
+        <TopButton button={{ title: "About Me", link: "/about"}}/>
     </div>
 </div>
 

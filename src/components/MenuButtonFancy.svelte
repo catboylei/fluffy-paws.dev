@@ -4,7 +4,7 @@
 
 <!-- i know i should just use an svg but better control on animations,,,,, -->
 
-<button class="menubutton">
+<button class="menubutton" aria-label="menu">
     <span class="bunger top" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>
     <span class="bunger middle" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>
     <span class="bunger bottom" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>
@@ -16,7 +16,7 @@
         width: 30px;
         background-color: transparent;
         border-width: 0;
-        margin-right: 24px;
+        margin-right: 20px;
         margin-left: 8px;
     }
 
