@@ -22,8 +22,9 @@
 
         height: 40px;
 
-        font-weight: bold;
-        font-family: Monocraft, monospace;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: SpaceGrotesk, monospace;
 
         color: var(--color);
 
