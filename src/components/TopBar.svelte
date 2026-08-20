@@ -3,6 +3,7 @@
     import TopButton from "./TopButton.svelte";
     import MenuButtonFancy from "./MenuButtonFancy.svelte";
     import Separator from "./Separator.svelte";
+    import Thetadelta from "./Thetadelta.svelte";
 </script>
 
 <div
@@ -12,14 +13,17 @@
         style:--hover-bg={theme.alt_bg_focused}
         style:--bg-color={theme.alt_bg}
 >
-    <div class="topbar-half">
+    <div class="topbar-side">
         <MenuButtonFancy/>
         <Separator/>
         <TopButton button={{ title: "Home", link: "/"}}/>
         <Separator/>
         <TopButton button={{ title: "My Projects", link: "/projects"}}/>
     </div>
-    <div class="topbar-half" style:justify-content="right">
+    <div class="topbar-middle" style:justify-content="center">
+        <Thetadelta color="femboy"/>
+    </div>
+    <div class="topbar-side" style:justify-content="right">
         <TopButton button={{ title: "About Me", link: "/about"}}/>
     </div>
 </div>
@@ -49,11 +53,19 @@
         border-color: var(--hover-border);
     }
 
-    .topbar-half {
+    .topbar-side {
         display: flex;
         align-items: center;
 
-        width: 50%;
+        width: 40%;
+        height: 50px;
+    }
+
+    .topbar-middle {
+        display: flex;
+        align-items: center;
+
+        width: 20%;
         height: 50px;
     }
 </style>
