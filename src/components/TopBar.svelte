@@ -1,7 +1,7 @@
 <script>
     import {theme} from "../constants.svelte.ts";
     import TopButton from "./TopButton.svelte";
-    import MenuButton from "./MenuButton.svelte";
+    import MenuButtonFancy from "./MenuButtonFancy.svelte";
 </script>
 
 <div
@@ -12,7 +12,7 @@
         style:--bg-color={theme.alt_bg}
 >
     <div class="topbar-half">
-        <MenuButton/>
+        <MenuButtonFancy/>
         <TopButton button={{ title: "Home", link: "/"}}/>
     </div>
     <div class="topbar-half" style:justify-content="right">
