@@ -28,6 +28,9 @@ function handleClicked() {
         border-width: 0;
         display: flex;
 
+        width: fit-content;
+        white-space: nowrap;
+
         margin-bottom: 4px;
 
         font-size: 16px;
@@ -59,6 +62,7 @@ function handleClicked() {
     .side-button {
         display: flex;
         flex-direction: column;
+        width: fit-content;
 
         margin-right: 12px;
         margin-left: 12px;

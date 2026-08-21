@@ -19,6 +19,7 @@
 <style>
     .button {
         border-width: 0;
+        white-space: nowrap;
 
         font-size: 13px;
         font-weight: 700;
