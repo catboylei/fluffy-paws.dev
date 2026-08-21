@@ -2,7 +2,7 @@
 import {theme} from "../../constants.svelte.ts";
 import { slide } from 'svelte/transition';
 const {button, children} = $props();
-let isOpen = $state(false)
+let isOpen = $state(button.title === "My Projects")
 
 function handleClicked() {
     isOpen = !isOpen;
@@ -19,7 +19,7 @@ function handleClicked() {
         <span class="icon" style:transform={(isOpen) ? "rotate(90deg)" : ""}></span>
     </button>
     {#if isOpen}
-        <div transition:slide>{@render children?.()}</div>
+        <div class="children" style:--side-color={theme.greyed_out} transition:slide>{@render children?.()}</div>
     {/if}
 </div>
 
@@ -28,7 +28,7 @@ function handleClicked() {
         border-width: 0;
         display: flex;
 
-        height: 40px;
+        margin-bottom: 4px;
 
         font-size: 16px;
         font-weight: 700;
@@ -37,9 +37,6 @@ function handleClicked() {
         color: var(--color);
 
         background-color: transparent;
-
-        margin-right: 12px;
-        margin-left: 12px;
 
         transition: color 0.25s ease;
     }
@@ -62,5 +59,14 @@ function handleClicked() {
     .side-button {
         display: flex;
         flex-direction: column;
+
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+
+    .children {
+        border-left: 2px solid var(--side-color);
+        margin-left: 10px;
     }
 </style>
