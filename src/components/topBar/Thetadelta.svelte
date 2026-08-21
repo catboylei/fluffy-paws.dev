@@ -35,7 +35,9 @@
 
 <button aria-label="meow" onclick={addRotations}>
     <span style:--color={theme.fg} style:--hover-color={theme.fg_focused}
-          style:transform={`rotate(${rotation}deg)`}></span>
+          style:transform={`rotate(${rotation}deg)`}>
+
+    </span>
 </button>
 
 <style>

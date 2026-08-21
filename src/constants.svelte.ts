@@ -8,5 +8,5 @@ export const theme = {
 };
 
 export const nav = $state({
-	isOpen: false,
+	isOpen: true,
 });
