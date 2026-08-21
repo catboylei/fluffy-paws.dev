@@ -1,10 +1,15 @@
 <script>
-    import {theme} from "../constants.svelte.ts";
+    import {nav} from "../../constants.svelte.ts";
+    import {theme} from "../../constants.svelte.ts";
+
+    function handleClicked() {
+        nav.isOpen = !nav.isOpen;
+    }
 </script>
 
 <!-- i know i should just use an svg but better control on animations,,,,, -->
 
-<button class="menubutton" aria-label="menu">
+<button class="menubutton" aria-label="menu" onclick={handleClicked}>
     <span class="bunger top" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>
     <span class="bunger middle" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>
     <span class="bunger bottom" style:--bg-color={theme.fg} style:--hover-color={theme.fg_focused}></span>

@@ -1,5 +1,5 @@
 <script>
-    import {theme} from "../constants.svelte.ts";
+    import {theme} from "../../constants.svelte.ts";
     import TopButton from "./TopButton.svelte";
     import MenuButtonFancy from "./MenuButtonFancy.svelte";
     import Separator from "./Separator.svelte";

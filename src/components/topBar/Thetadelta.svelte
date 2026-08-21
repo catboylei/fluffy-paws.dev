@@ -1,5 +1,5 @@
 <script>
-    import {theme} from "../constants.svelte.ts";
+    import {theme} from "../../constants.svelte.ts";
     import {onMount} from "svelte";
 
     let degreesLeft = 0;

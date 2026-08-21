@@ -1,5 +1,5 @@
 <script>
-    import {theme} from "../constants.svelte.ts";
+    import {theme} from "../../constants.svelte.ts";
     const {button} = $props();
 
     function openPage() {
