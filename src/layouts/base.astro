@@ -3,6 +3,7 @@ const { title } = Astro.props;
 import TopBar from '../components/topBar/TopBar.svelte';
 import SidePanel from '../components/sidePanel/SidePanel.svelte';
 import ContentTab from '../components/ContentTab.svelte';
+import CookieHandler from '../CookieHandler.svelte';
 ---
 
 <html lang="en">
@@ -12,6 +13,8 @@ import ContentTab from '../components/ContentTab.svelte';
 		<title>{title}</title>
 	</head>
 	<body>
+		<CookieHandler client:load/>
+
 		<TopBar client:load/>
 		<div class="top-container">
 			<SidePanel client:load/>

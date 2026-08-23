@@ -1,9 +1,9 @@
 <script>
-    import {nav} from "../../constants.svelte.ts";
+    import {sidePanelOpen} from "../../constants.svelte.ts";
     import {theme} from "../../constants.svelte.ts";
 
     function handleClicked() {
-        nav.isOpen = !nav.isOpen;
+        sidePanelOpen.value = !sidePanelOpen.value
     }
 </script>
 
