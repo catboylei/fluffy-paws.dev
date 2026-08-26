@@ -1,6 +1,7 @@
 <script>
     import {isHydrated, aboutMeOpen, theme} from '../../constants.svelte.ts';
     import Pfp from "./Pfp.svelte";
+    import Links from "./Links.svelte";
 </script>
 
 <div
@@ -16,7 +17,7 @@
         style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, margin 0.25s ease, border-width 0s ease ${aboutMeOpen.value ? 0 : 0.25}s`}
 >
     <div class="linkspfp">
-        <div>meow meow meow meow meow meow meow</div>
+        <Links/>
         <Pfp/>
     </div>
 </div>
@@ -43,5 +44,6 @@
         flex-direction: row;
         padding-left: 24px;
         text-align: right;
+        align-items: center;
     }
 </style>
