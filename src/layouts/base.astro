@@ -13,11 +13,11 @@ import CookieHandler from '../CookieHandler.svelte';
 		<title>{title}</title>
 	</head>
 	<body>
-		<CookieHandler client:load/>
+		<CookieHandler client:load />
 
-		<TopBar client:load/>
+		<TopBar client:load />
 		<div class="top-container">
-			<SidePanel client:load/>
+			<SidePanel client:load />
 			<ContentTab client:load>
 				<slot />
 			</ContentTab>
