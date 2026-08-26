@@ -15,14 +15,14 @@
         display: block;
         object-fit: cover;
         border-style: solid;
-        border-width: 2px;
+        border-width: 0.3vh;
         border-color: var(--border-color);
         transition: border-color 0.25s ease;
-        width: 200px;
-        height: 300px;
-        border-radius: 10px;
-        margin-right: 24px;
-        margin-left: 12px;
+        width: 20vh;
+        height: 30vh;
+        border-radius: 1vh;
+        margin-right: 2vh;
+        margin-left: 1vh;
     }
     .themed-image:hover {
         border-color: var(--hover-border);

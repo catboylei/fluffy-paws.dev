@@ -21,9 +21,9 @@
 	.button {
 		border-width: 0;
 
-		height: 40px;
+		height: 4vh;
 
-		font-size: 16px;
+		font-size: 1.5vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, monospace;
 
@@ -34,15 +34,15 @@
 		background-position: center bottom;
 		background-image: linear-gradient(currentColor, currentColor);
 		transition: background-size 0.25s ease;
-		background-size: 0 2px;
-		background-position-y: 30px;
+		background-size: 0 0.3vh;
+		background-position-y: 3vh;
 
-		margin-right: 12px;
-		margin-left: 12px;
+		margin-right: 1vh;
+		margin-left: 1vh;
 	}
 
 	.button:hover {
-		background-size: 80% 2px;
+		background-size: 80% 0.3vh;
 		color: var(--hover-color);
 	}
 </style>

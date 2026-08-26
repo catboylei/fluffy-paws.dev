@@ -6,6 +6,12 @@ import SidePanel from '../components/sidePanel/SidePanel.svelte';
 import ContentTab from '../components/ContentTab.svelte';
 import CookieHandler from '../CookieHandler.svelte';
 import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
+
+// todo plan for resolution support :
+// constrain content width to 16:9 resolution to not break on UW and absurd resolutions
+// make separate mobile layout
+
+// todo credits for fonts etc
 ---
 
 <html lang="en">
@@ -44,8 +50,8 @@ import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 			flex: 1;
 			display: flex;
 			flex-direction: row;
-			margin-left: 12px;
-			margin-bottom: 12px;
+			margin-left: 1vh;
+			margin-bottom: 1vh;
 		}
 
 		@font-face {

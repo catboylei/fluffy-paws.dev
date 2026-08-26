@@ -20,17 +20,17 @@
 
 <style>
 	.menubutton {
-		height: 30px;
-		width: 30px;
+		height: 3vh;
+		width: 3vh;
 		background-color: transparent;
 		border-width: 0;
-		margin-right: 20px;
-		margin-left: 8px;
+		margin-right: 2vh;
+		margin-left: 0.8vh;
 	}
 
 	.bunger {
 		display: block;
-		height: 2px;
+		height: 0.2vh;
 		border-width: 0;
 		background-image: linear-gradient(var(--bg-color), var(--bg-color));
 		background-repeat: no-repeat;
@@ -38,19 +38,19 @@
 	}
 
 	.top {
-		width: 20px;
+		width: 2vh;
 		margin-left: 0;
 	}
 
 	.middle {
-		width: 30px;
-		margin-top: 8px;
-		margin-bottom: 8px;
+		width: 3vh;
+		margin-top: 0.8vh;
+		margin-bottom: 0.8vh;
 	}
 
 	.bottom {
-		width: 20px;
-		margin-left: 10px;
+		width: 2vh;
+		margin-left: 1vh;
 	}
 
 	.menubutton:hover .bunger {
@@ -62,6 +62,6 @@
 	}
 
 	.menubutton:hover .top {
-		margin-left: 10px;
+		margin-left: 1vh;
 	}
 </style>

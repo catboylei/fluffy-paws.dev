@@ -7,7 +7,7 @@
 <style>
 	span {
 		display: block;
-		height: 30px;
-		width: 2px;
+		height: 3vh;
+		width: 0.3vh;
 	}
 </style>

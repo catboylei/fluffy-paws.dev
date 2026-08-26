@@ -26,13 +26,13 @@
     .links {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 1vh;
         align-items: end;
     }
     .link-row {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 1vh;
         color: var(--fg);
         text-decoration: none;
         transition: color 0.2s ease;
@@ -42,12 +42,12 @@
     }
     .icon {
         font-family: NerdFonts, monospace;
-        font-size: 16px;
+        font-size: 1.5vh;
         text-align: center;
     }
     .label {
         font-family: 'SpaceGrotesk', monospace;
-        font-size: 16px;
+        font-size: 1.5vh;
         font-weight: 700;
     }
 </style>

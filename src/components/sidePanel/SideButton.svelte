@@ -29,9 +29,9 @@
 		width: fit-content;
 		white-space: nowrap;
 
-		margin-bottom: 4px;
+		margin-bottom: 0.4vh;
 
-		font-size: 16px;
+		font-size: 1.5vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, monospace;
 
@@ -47,10 +47,10 @@
 	}
 
 	.icon {
-		margin-left: 3px;
+		margin-left: 0.5vh;
 		display: block;
-		height: 20px;
-		width: 20px;
+		height: 2vh;
+		width: 2vh;
 		mask: url('/icons/theshape.svg') no-repeat center / contain;
 		-webkit-mask: url('/icons/theshape.svg') no-repeat center / contain;
 		background-color: CurrentColor;
@@ -64,13 +64,16 @@
 		flex-direction: column;
 		width: fit-content;
 
-		margin-right: 12px;
-		margin-left: 12px;
-		margin-bottom: 12px;
+		margin-right: 1vh;
+		margin-left: 2.4vh;
+		margin-bottom: 1vh;
 	}
 
 	.children {
-		border-left: 2px solid var(--side-color);
-		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		border-left: 0.3vh solid var(--side-color);
+		margin-left: 1vh;
 	}
 </style>

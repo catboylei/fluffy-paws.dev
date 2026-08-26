@@ -45,20 +45,20 @@
     .links {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 1vh;
         align-items: center;
     }
     .links-title {
         color: var(--fg);
         transition: color 0.25s ease;
         font-family: 'SpaceGrotesk', monospace;
-        font-size: 16px;
+        font-size: 1.5vh;
         font-weight: 700;
     }
     .link-row-container {
         display: flex;
         flex-direction: row;
-        gap: 8px;
+        gap: 1vh;
     }
     .links:hover .links-title {
         color: var(--fg-focused);
@@ -73,9 +73,7 @@
     }
     .icon {
         font-family: NerdFonts, monospace;
-        font-size: 32px;
+        font-size: 4vh;
         text-align: center;
-        padding-right: 4px;
-        padding-left: 4px;
     }
 </style>

@@ -49,8 +49,8 @@
 
 	span {
 		display: block;
-		height: 40px;
-		width: 40px;
+		height: 4vh;
+		width: 4vh;
 		mask: url('/icons/thetadelta.svg') no-repeat center / contain;
 		-webkit-mask: url('/icons/thetadelta.svg') no-repeat center / contain;
 		background-color: var(--color);

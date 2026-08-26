@@ -6,12 +6,12 @@
         style:--color={theme.fg}
         style:--hover-color={theme.fg_focused}
 >
-    <p>
+    <p class="text">
         Hi ! I'm lei <span class="dim">(it/any)</span> :3 <br><br>
         I'm a dev* and CS student that spends most <br> of its free time working on random projects, <br> and is slightly obsessed by linux and trains <br>
         Hire me pls thanks <br><br>
 
-        <em>* kinda mediocre one but i make cool stuff <br> sometimes soo</em>
+        <span class="dim">* kinda mediocre one but i make cool stuff <br> sometimes soo</span>
     </p>
 </div>
 
@@ -22,12 +22,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 2vh;
+        padding-right: 2vh;
         text-align: center;
         font-weight: 700;
         transition: color 0.25s ease;
-        max-height: 200px;
+        max-height: 20vh;
         text-wrap: nowrap;
     }
 
@@ -37,5 +37,9 @@
 
     .dim {
         opacity: 0.6;
+    }
+
+    .text {
+        font-size: 1.5vh;
     }
 </style>

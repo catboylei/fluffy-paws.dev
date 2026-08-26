@@ -5,6 +5,7 @@ export const theme = {
 	alt_bg: 'rgba(20, 0, 20, 0.8)',
 	alt_bg_focused: 'rgba(20, 0, 20, 1)',
 	greyed_out: 'rgba(100, 100, 100, 0.8)',
+	// todo move shit like margin size here
 };
 
 export const sidePanelOpen: { value: boolean } = $state({ value: false });

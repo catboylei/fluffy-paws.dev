@@ -21,7 +21,7 @@
 		border-width: 0;
 		white-space: nowrap;
 
-		font-size: 13px;
+		font-size: 1.2vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, NerdFonts, monospace;
 
@@ -29,8 +29,8 @@
 
 		background-color: transparent;
 
-		margin-right: 12px;
-		margin-left: 12px;
+		margin-right: 1vh;
+		margin-left: 1vh;
 	}
 
 	.button:hover {
