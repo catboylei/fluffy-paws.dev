@@ -1,4 +1,3 @@
-<!-- Links.svelte -->
 <script lang="ts">
     import { theme } from '../../constants.svelte.ts';
 
@@ -47,7 +46,7 @@
         text-align: center;
     }
     .label {
-        font-family: 'SpaceGrotesk', sans-serif;
+        font-family: 'SpaceGrotesk', monospace;
         font-size: 16px;
         font-weight: 700;
     }

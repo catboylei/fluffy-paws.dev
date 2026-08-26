@@ -2,6 +2,8 @@
     import {isHydrated, aboutMeOpen, theme} from '../../constants.svelte.ts';
     import Pfp from "./Pfp.svelte";
     import Links from "./Links.svelte";
+    import AboutMeText from "./AboutMeText.svelte";
+    import TechStack from "./TechStack.svelte";
 </script>
 
 <div
@@ -20,7 +22,14 @@
         <Links/>
         <Pfp/>
     </div>
+
+    <AboutMeText/>
+    <TechStack/>
+
+    <p class="pawnote">⨺⃝ &nbsp;We stay awesome &lt;3</p>
 </div>
+
+
 
 <style>
     .sidepanel {
@@ -31,7 +40,8 @@
         border-style: solid;
         border-color: var(--border-color);
         background-color: var(--bg-color);
-        align-items: end;
+        align-items: center;
+        gap: 24px;
     }
 
     .sidepanel:hover {
@@ -45,5 +55,15 @@
         padding-left: 24px;
         text-align: right;
         align-items: center;
+    }
+
+    .pawnote {
+        margin-top: auto;
+        font-style: italic;
+        font-size: 12px;
+        color: var(--border-color);
+        opacity: 0.6;
+        text-align: center;
+        font-family: 'SpaceGrotesk', NerdFonts, monospace;
     }
 </style>
