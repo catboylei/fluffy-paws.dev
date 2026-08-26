@@ -1,5 +1,5 @@
 <script>
-	import { sidePanelOpen, theme } from '../../constants.svelte.ts';
+	import {isHydrated, sidePanelOpen, theme} from '../../constants.svelte.ts';
 	import SideButton from './SideButton.svelte';
 	import SideGoober from './SideGoober.svelte';
 </script>
@@ -14,7 +14,7 @@
 	style:width={sidePanelOpen.value ? '220px' : 0}
 	style:border-width={sidePanelOpen.value ? '2px' : 0}
 	style:margin={sidePanelOpen.value ? '0 12px 0 0' : '0'}
-	style:transition={`background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
+	style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
 >
 	<SideButton button={{ title: 'My Projects' }}>
 		<SideGoober button={{ title: 'BfDisplay-rs', link: '/projects/bfdisplay-rs' }} />
