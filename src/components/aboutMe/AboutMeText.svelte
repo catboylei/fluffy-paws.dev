@@ -7,7 +7,7 @@
         style:--hover-color={theme.fg_focused}
 >
     <p>
-        Hi ! I'm lei :3 <br><br>
+        Hi ! I'm lei <span class="dim">(it/any)</span> :3 <br><br>
         I'm a dev* and CS student that spends most of its free time working on random projects, and is slightly obsessed by linux and trains <br>
         Hire me pls thanks <br><br>
 
@@ -31,5 +31,9 @@
 
     .top:hover {
         color: var(--hover-color);
+    }
+
+    .dim {
+        opacity: 0.6;
     }
 </style>
