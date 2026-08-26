@@ -8,10 +8,10 @@
 >
     <p>
         Hi ! I'm lei <span class="dim">(it/any)</span> :3 <br><br>
-        I'm a dev* and CS student that spends most of its free time working on random projects, and is slightly obsessed by linux and trains <br>
+        I'm a dev* and CS student that spends most <br> of its free time working on random projects, <br> and is slightly obsessed by linux and trains <br>
         Hire me pls thanks <br><br>
 
-        <em>* kinda mediocre one but i make cool stuff sometimes soo</em>
+        <em>* kinda mediocre one but i make cool stuff <br> sometimes soo</em>
     </p>
 </div>
 
@@ -27,6 +27,8 @@
         text-align: center;
         font-weight: 700;
         transition: color 0.25s ease;
+        max-height: 200px;
+        text-wrap: nowrap;
     }
 
     .top:hover {

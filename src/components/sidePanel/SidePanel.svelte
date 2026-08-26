@@ -12,9 +12,10 @@
 	style:--bg-color={theme.alt_bg}
 	style:content-visibility={sidePanelOpen.value ? 'visible' : 'hidden'}
 	style:width={sidePanelOpen.value ? '220px' : 0}
+	style:min-width={sidePanelOpen.value ? '220px' : 0}
 	style:border-width={sidePanelOpen.value ? '2px' : 0}
 	style:margin={sidePanelOpen.value ? '0 12px 0 0' : '0'}
-	style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
+	style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, min-width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
 >
 	<SideButton button={{ title: 'My Projects' }}>
 		<SideGoober button={{ title: 'BfDisplay-rs', link: '/projects/bfdisplay-rs' }} />
@@ -40,6 +41,8 @@
 		border-style: solid;
 		border-color: var(--border-color);
 		background-color: var(--bg-color);
+		overflow: hidden;
+		max-width: 220px;
 	}
 
 	.sidepanel:hover {
