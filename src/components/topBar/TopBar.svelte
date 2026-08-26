@@ -1,5 +1,5 @@
 <script>
-	import { theme } from '../../constants.svelte.ts';
+	import {aboutMeOpen, theme} from '../../constants.svelte.ts';
 	import TopButton from './TopButton.svelte';
 	import MenuButtonFancy from './MenuButtonFancy.svelte';
 	import Separator from './Separator.svelte';
@@ -24,7 +24,7 @@
 		<Thetadelta color="femboy" />
 	</div>
 	<div class="topbar-side" style:justify-content="right">
-		<TopButton button={{ title: 'About Me', link: '/about' }} />
+		<TopButton button={{ title: 'About Me', about: true }} />
 	</div>
 </div>
 

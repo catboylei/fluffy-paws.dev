@@ -1,9 +1,11 @@
 ---
+import About from '../pages/about.astro';
 const { title } = Astro.props;
 import TopBar from '../components/topBar/TopBar.svelte';
 import SidePanel from '../components/sidePanel/SidePanel.svelte';
 import ContentTab from '../components/ContentTab.svelte';
 import CookieHandler from '../CookieHandler.svelte';
+import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 ---
 
 <html lang="en">
@@ -21,6 +23,7 @@ import CookieHandler from '../CookieHandler.svelte';
 			<ContentTab client:load>
 				<slot />
 			</ContentTab>
+			<AboutMePanel client:load />
 		</div>
 	</body>
 

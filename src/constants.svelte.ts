@@ -7,5 +7,6 @@ export const theme = {
 	greyed_out: 'rgba(100, 100, 100, 0.8)',
 };
 
-export const sidePanelOpen: { value: null | boolean } = $state({ value: false });
+export const sidePanelOpen: { value: boolean } = $state({ value: false });
+export const aboutMeOpen: { value: boolean } = $state({ value: false });
 export const isHydrated = $state({ value: false });

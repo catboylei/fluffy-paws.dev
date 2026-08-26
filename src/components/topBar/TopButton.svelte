@@ -1,15 +1,16 @@
 <script>
-	import { theme } from '../../constants.svelte.ts';
+	import {aboutMeOpen, theme} from '../../constants.svelte.ts';
 	const { button } = $props();
 
-	function openPage() {
-		window.location.href = button.link;
+	function handleClicked() {
+		if (button.link) window.location.href = button.link;
+		if (button.about) aboutMeOpen.value = !aboutMeOpen.value;
 	}
 </script>
 
 <button
 	class="button"
-	onclick={openPage}
+	onclick={handleClicked}
 	style:--color={theme.fg}
 	style:--hover-color={theme.fg_focused}
 >
