@@ -1,5 +1,5 @@
 <script>
-	import { theme } from '../constants.svelte.ts';
+	import { theme } from '../../constants.svelte.ts';
 </script>
 
 <div
@@ -15,7 +15,7 @@
 <style>
 	.contenttab {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 
 		width: 100%;
 
@@ -26,12 +26,18 @@
 
 		background-color: var(--bg-color);
 
-		padding-left: 0.2vh;
-		padding-right: 0.8vh;
+		transition: background-color 0.25s ease, border-color 0.25s ease;
 
-		transition:
-			background-color 0.25s ease,
-			border-color 0.25s ease;
+		flex: 1;
+		min-height: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+		box-sizing: border-box;
+
+		scrollbar-width: thin;
+		scrollbar-color: var(--border-color) var(--bg-color);
+
+		padding-bottom: 2vh;
 	}
 
 	.contenttab:hover {

@@ -2,7 +2,7 @@
 const { title } = Astro.props;
 import TopBar from '../components/topBar/TopBar.svelte';
 import SidePanel from '../components/sidePanel/SidePanel.svelte';
-import ContentTab from '../components/ContentTab.svelte';
+import ContentTab from '../components/contentTab/ContentTab.svelte';
 import CookieHandler from '../CookieHandler.svelte';
 import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 
@@ -26,13 +26,18 @@ import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 		<div class="top-container">
 			<SidePanel client:load />
 			<ContentTab client:load>
-				<slot />
+				<slot client:load />
 			</ContentTab>
 			<AboutMePanel client:load />
 		</div>
 	</body>
 
 	<style is:global>
+		html {
+			height: 100vh;
+			overflow: hidden;
+			margin: 0;
+		}
 		body {
 			background-color: black;
 			background-image: url('/background.jpg');
@@ -42,7 +47,8 @@ import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 			margin: 0;
 			display: flex;
 			flex-direction: column;
-			height: 100vh
+			height: 100%;
+			overflow: hidden;
 		}
 
 		.top-container {
@@ -52,6 +58,8 @@ import AboutMePanel from '../components/aboutMe/AboutMePanel.svelte';
 			margin-left: 1vh;
 			margin-bottom: 1vh;
 			margin-right: 1vh;
+			min-height: 0;
+			box-sizing: border-box;
 		}
 
 		@font-face {
