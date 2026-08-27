@@ -13,10 +13,10 @@
 	style:--hover-bg={theme.alt_bg_focused}
 	style:--bg-color={theme.alt_bg}
 	style:content-visibility={sidePanelOpen.value ? 'visible' : 'hidden'}
-	style:width={sidePanelOpen.value ? '22vh' : 0}
-	style:min-width={sidePanelOpen.value ? '22vh' : 0}
+	style:width={sidePanelOpen.value ? '24vh' : 0}
+	style:min-width={sidePanelOpen.value ? '24vh' : 0}
 	style:border-width={sidePanelOpen.value ? '0.3vh' : 0}
-	style:margin={sidePanelOpen.value ? '0 1.2vh 0 0' : '0'}
+	style:margin={sidePanelOpen.value ? '0 1vh 0 0' : '0'}
 	style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, min-width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
 >
 	<SideButton button={{ title: 'My Projects' }}>
@@ -44,7 +44,7 @@
 		border-color: var(--border-color);
 		background-color: var(--bg-color);
 		overflow: hidden;
-		max-width: 22vh;
+		max-width: 24vh;
 	}
 
 	.sidepanel:hover {

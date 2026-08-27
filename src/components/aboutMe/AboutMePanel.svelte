@@ -16,7 +16,7 @@
         style:width={aboutMeOpen.value ? '44vh' : 0}
         style:min-width={aboutMeOpen.value ? '44vh' : 0}
         style:border-width={aboutMeOpen.value ? '0.3vh' : 0}
-        style:margin={aboutMeOpen.value ? '0 1.2vh 0 0' : '0'}
+        style:margin={aboutMeOpen.value ? '0 0 0 1vh' : '0'}
         style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, min-width 0.25s ease, margin 0.25s ease, border-width 0s ease ${aboutMeOpen.value ? 0 : 0.25}s`}
 >
     <div class="linkspfp">

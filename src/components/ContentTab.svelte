@@ -26,8 +26,6 @@
 
 		background-color: var(--bg-color);
 
-		margin: 0 1vh 0 0;
-
 		padding-left: 0.2vh;
 		padding-right: 0.8vh;
 

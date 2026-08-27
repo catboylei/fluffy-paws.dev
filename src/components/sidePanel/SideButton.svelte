@@ -31,7 +31,7 @@
 
 		margin-bottom: 0.4vh;
 
-		font-size: 1.5vh;
+		font-size: 2.2vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, monospace;
 
@@ -47,10 +47,11 @@
 	}
 
 	.icon {
+		margin-top: 0.3vh;
 		margin-left: 0.5vh;
 		display: block;
-		height: 2vh;
-		width: 2vh;
+		height: 2.2vh;
+		width: 2.2vh;
 		mask: url('/icons/theshape.svg') no-repeat center / contain;
 		-webkit-mask: url('/icons/theshape.svg') no-repeat center / contain;
 		background-color: CurrentColor;

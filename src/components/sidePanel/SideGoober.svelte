@@ -21,7 +21,7 @@
 		border-width: 0;
 		white-space: nowrap;
 
-		font-size: 1.2vh;
+		font-size: 1.8vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, NerdFonts, monospace;
 

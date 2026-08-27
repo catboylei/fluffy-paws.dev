@@ -23,7 +23,7 @@
 
 		height: 4vh;
 
-		font-size: 1.5vh;
+		font-size: 1.8vh;
 		font-weight: 700;
 		font-family: SpaceGrotesk, monospace;
 

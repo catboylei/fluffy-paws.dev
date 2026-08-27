@@ -27,7 +27,7 @@
         text-align: center;
         font-weight: 700;
         transition: color 0.25s ease;
-        max-height: 20vh;
+        max-height: 30vh;
         text-wrap: nowrap;
     }
 
@@ -40,6 +40,6 @@
     }
 
     .text {
-        font-size: 1.5vh;
+        font-size: 1.8vh;
     }
 </style>

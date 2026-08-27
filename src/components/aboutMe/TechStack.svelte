@@ -52,7 +52,7 @@
         color: var(--fg);
         transition: color 0.25s ease;
         font-family: 'SpaceGrotesk', monospace;
-        font-size: 1.5vh;
+        font-size: 1.8vh;
         font-weight: 700;
     }
     .link-row-container {

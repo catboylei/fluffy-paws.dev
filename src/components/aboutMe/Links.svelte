@@ -42,12 +42,12 @@
     }
     .icon {
         font-family: NerdFonts, monospace;
-        font-size: 1.5vh;
+        font-size: 2vh;
         text-align: center;
     }
     .label {
         font-family: 'SpaceGrotesk', monospace;
-        font-size: 1.5vh;
+        font-size: 1.8vh;
         font-weight: 700;
     }
 </style>
