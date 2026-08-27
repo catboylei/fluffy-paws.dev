@@ -20,12 +20,14 @@
 	style:transition={(isHydrated.value === false) ? '' : `background-color 0.25s ease, border-color 0.25s ease, width 0.25s ease, min-width 0.25s ease, margin 0.25s ease, border-width 0s ease ${sidePanelOpen.value ? 0 : 0.25}s`}
 >
 	<SideButton button={{ title: 'My Projects' }}>
-		<SideGoober button={{ title: 'BfDisplay-rs', link: '/projects/bfdisplay-rs' }} />
-		<SideGoober button={{ title: 'Nixanthropy', link: '/projects/nixanthropy' }} />
-		<SideGoober button={{ title: 'Meow-Macro', link: '/projects/meow-macro' }} />
-		<SideGoober button={{ title: 'fluffy-paws.dev', link: '/projects/fluffypaws' }} />
-		<SideGoober button={{ title: 'GregUtils', link: '/projects/gregutils' }} />
-		<SideGoober button={{ title: 'CatboyAddons', link: '/projects/catboyaddons' }} />
+		<SideGoober button={{ title: 'BfDisplay-rs', link: '/projects#BfDisplay-rs' }} />
+		<SideGoober button={{ title: 'Meow Macro', link: '/projects#Meow Macro' }} />
+		<SideGoober button={{ title: 'Nixanthropy', link: '/projects#Nixanthropy' }} />
+		<SideGoober button={{ title: 'Greg Utils', link: '/projects#Greg Utils' }} />
+		<SideGoober button={{ title: 'Live Majin Reaction', link: '/projects#Live Majin Reaction' }} />
+		<SideGoober button={{ title: 'fluffypaws.dev', link: '/projects#fluffypaws.dev' }} />
+		<SideGoober button={{ title: 'SimpleWifi-rs', link: '/projects#SimpleWifi-rs' }} />
+		<SideGoober button={{ title: 'CatboyAddons-ct', link: '/projects#CatboyAddons-ct' }} />
 	</SideButton>
 	<SideButton button={{ title: 'Something Else' }} />
 	<SideButton button={{ title: 'Private' }}>

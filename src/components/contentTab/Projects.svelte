@@ -112,6 +112,7 @@ import Project from "./Project.svelte";
         transition: color 0.25s ease;
         font-family: 'SpaceGrotesk', NerdFonts, monospace;
         text-align: center;
+        font-size: 2.2vh;
     }
 
     .text:hover {
