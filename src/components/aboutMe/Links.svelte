@@ -4,7 +4,7 @@
     const links = [
         { icon: '', label: 'GitHub', href: 'https://github.com/catboylei' },
         { icon: '', label: 'Discord', href: 'https://discord.com/users/catboylei' },
-        { icon: '', label: 'Bluesky', href: 'https://bsky.social/about' }, // todo make a bsky account lol
+        { icon: '', label: 'Bluesky', href: 'https://bsky.app/profile/catboylei.bsky.social' },
         { icon: '', label: 'Steam', href: 'https://steamcommunity.com/id/catboylei/' },
     ];
 </script>
