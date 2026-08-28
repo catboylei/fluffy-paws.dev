@@ -27,6 +27,7 @@
 		background-color: var(--bg-color);
 
 		transition: background-color 0.25s ease, border-color 0.25s ease;
+		align-items: center;
 
 		flex: 1;
 		min-height: 0;
@@ -36,8 +37,6 @@
 
 		scrollbar-width: thin;
 		scrollbar-color: var(--border-color) var(--bg-color);
-
-		padding-bottom: 2vh;
 	}
 
 	.contenttab:hover {

@@ -2,18 +2,20 @@
 import {theme} from "../../constants.svelte.ts";
 import Separator from "./Separator.svelte";
 import Project from "./Project.svelte";
+
+// todo if vw < vh/2 make image size smaller to accomodate
 </script>
 
 <div class="top"
      style:--hover-color={theme.fg_focused}
      style:--color={theme.fg}>
-    <h1 class="text">
+    <div class="text">
         My Projects
-    </h1>
-    <h3 class="desc text">
+    </div>
+    <div class="desc text">
         Welcome to my projects ! <br>
         Here I will showcase all my currently public projects.
-    </h3>
+    </div>
 
     <Separator text="Mature / Finished Projects"/>
 
@@ -105,7 +107,30 @@ import Project from "./Project.svelte";
         width: 100%;
         padding: 2.4vh;
         align-items: center;
+        animation: fadeSlideUp 0.6s ease-out;
     }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .top > * {
+        opacity: 0;
+        animation: fadeSlideUp 0.5s ease-out forwards;
+    }
+    .top > *:nth-child(1) { animation-delay: 0.05s; }
+    .top > *:nth-child(2) { animation-delay: 0.15s; }
+    .top > *:nth-child(3) { animation-delay: 0.25s; }
+    .top > *:nth-child(4) { animation-delay: 0.35s; }
+    .top > *:nth-child(5) { animation-delay: 0.45s; }
+    .top > *:nth-child(6) { animation-delay: 0.55s; }
 
     .text {
         color: var(--color);
@@ -113,6 +138,8 @@ import Project from "./Project.svelte";
         font-family: 'SpaceGrotesk', NerdFonts, monospace;
         text-align: center;
         font-size: 2.2vh;
+        font-weight: 700;
+        margin-bottom: 2vh;
     }
 
     .text:hover {
